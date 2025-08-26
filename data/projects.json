@@ -1,0 +1,88 @@
+[
+  {
+    "title": "AutomationExercise — Playwright (POM)",
+    "description": "اختبارات وظيفية وواجهات باستخدام Playwright بنمط Page Object Model.",
+    "tags": ["Playwright", "POM", "UI", "E2E"],
+    "url": "https://github.com/HeshamHenry1"
+  },
+  {
+    "title": "ParaBank — Playwright (POM)",
+    "description": "سيناريوهات تسجيل الدخول والتحويلات والدفعات مع قابلية إعادة الاستخدام.",
+    "tags": ["Playwright", "Banking", "Smoke", "Regression"],
+    "url": "https://github.com/HeshamHenry1"
+  },
+  {
+    "title": "SauceDemo — UI Validation",
+    "description": "تحقق من عناصر الواجهة والتصميم وسير الشراء.",
+    "tags": ["UI", "Assertions", "Visual"],
+    "url": "https://github.com/HeshamHenry1"
+  },
+  {
+    "title": "The Internet Herokuapp — Cross-page checks",
+    "description": "اختبارات متقاطعة للصفحات وحالات الحواف.",
+    "tags": ["Playwright", "Cross-page"],
+    "url": "https://github.com/HeshamHenry1"
+  },
+  {
+    "title": "AutomationExercise — WebDriverIO",
+    "description": "حالات اختبار WebDriverIO تشمل المصادقة والسلة والدفع.",
+    "tags": ["WebDriverIO", "E2E"],
+    "url": "https://github.com/HeshamHenry1"
+  },
+  {
+    "title": "Guru99 Banking — WebDriverIO",
+    "description": "تغطية لتدفقات بنكية أساسية بإثباتات واضحة.",
+    "tags": ["WebDriverIO", "Banking"],
+    "url": "https://github.com/HeshamHenry1"
+  },
+  {
+    "title": "The Internet — Form validation",
+    "description": "اختبارات تحقق من صحة النماذج وحالات الأخطاء.",
+    "tags": ["WebDriverIO", "Validation"],
+    "url": "https://github.com/HeshamHenry1"
+  },
+  {
+    "title": "Automation Exercise — Cypress",
+    "description": "اختبارات مع تقارير وصور (mochawesome).",
+    "tags": ["Cypress", "mochawesome", "Reports"],
+    "url": "https://github.com/HeshamHenry1"
+  },
+  {
+    "title": "AutomationExercise — Selenium (POM)",
+    "description": "تنظيم الصفحات والاختبارات مع Selenium وPage Object Model.",
+    "tags": ["Selenium", "POM"],
+    "url": "https://github.com/HeshamHenry1"
+  },
+  {
+    "title": "SauceDemo — Selenium",
+    "description": "تحقق من الوظائف الأساسية وسير الشراء.",
+    "tags": ["Selenium", "UI"],
+    "url": "https://github.com/HeshamHenry1"
+  },
+  {
+    "title": "nopCommerce — TestRail",
+    "description": "خطة اختبار كاملة وحالات اختبار وتتبّع العيوب.",
+    "tags": ["Manual", "TestRail"],
+    "url": "https://github.com/HeshamHenry1"
+  },
+  {
+    "title": "Mercury Tours — TestRail",
+    "description": "اختبارات وظيفية حسب تدفقات المستخدم.",
+    "tags": ["Manual", "TestRail"],
+    "url": "https://github.com/HeshamHenry1"
+  },
+  {
+    "title": "ParaBank — Excel",
+    "description": "حالات اختبار يدوية مبنية على قصص المستخدم.",
+    "tags": ["Manual", "Excel"],
+    "url": "https://github.com/HeshamHenry1"
+  },
+  {
+    "title": "SauceDemo — Excel",
+    "description": "اختبارات واجهة ووظائف.",
+    "tags": ["Manual", "Excel"],
+    "url": "https://github.com/HeshamHenry1"
+  }
+]
+
+

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hesham Henry | QA Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of Hesham Henry — Software Testing Engineer (Manual & Automation)" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'><text y='50%' x='50%' dominant-baseline='middle' text-anchor='middle' font-size='160'>🧪</text></svg>">
+  </head>
+  <body>
+    <div id="tsparticles"></div>
+
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="#hero">Hesham Henry</a>
+        <button id="navToggle" class="nav-toggle" aria-label="Menu">☰</button>
+        <ul id="navMenu" class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certs">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="section hero">
+        <div class="hero-content">
+          <img class="avatar" src="assets/avatar.jpg" alt="Portrait of Hesham Henry" />
+          <h1 class="headline gradient-text">Software QA & Automation Test Engineer — Hesham Henry</h1>
+          <p class="subtitle">Manual & Automation Testing • Playwright • WebDriverIO • Cypress • Selenium</p>
+          <div class="cta-group">
+            <a class="btn primary" href="#projects">Explore Projects</a>
+            <a class="btn ghost" href="https://github.com/HeshamHenry1" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <div class="hero-illustration" aria-hidden="true">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <h2 class="section-title">About</h2>
+        <p>
+          I'm <strong>Hesham Henry</strong>, a <strong>Software QA & Automation Test Engineer</strong> with hands-on experience designing
+          scalable testing strategies across web applications. I create maintainable test suites using <strong>Playwright</strong>,
+          <strong>WebDriverIO</strong>, <strong>Cypress</strong>, and <strong>Selenium</strong>, and I document outcomes with clear, actionable
+          reports (mochawesome/HTML).
+        </p>
+        <p>
+          My approach blends strong <strong>manual testing</strong> fundamentals (exploratory testing, user-flow validation, risk-based
+          prioritization) with <strong>automation</strong> best practices (POM, DRY utilities, stable selectors, CI readiness). I care
+          about user experience, reliability, and speed-to-feedback in teams.
+        </p>
+      </section>
+
+      <section id="skills" class="section skills">
+        <h2 class="section-title">Skills & Tools</h2>
+        <ul class="chip-list">
+          <li class="chip">TestRail</li>
+          <li class="chip">Excel</li>
+          <li class="chip">Playwright</li>
+          <li class="chip">WebDriverIO</li>
+          <li class="chip">Cypress</li>
+          <li class="chip">Selenium</li>
+          <li class="chip">Git</li>
+          <li class="chip">GitHub</li>
+          <li class="chip">mochawesome</li>
+          <li class="chip">HTML Reports</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="section projects">
+        <h2 class="section-title">Projects</h2>
+        <div id="projectsGrid" class="grid"></div>
+      </section>
+
+      <section id="certs" class="section certs">
+        <h2 class="section-title">Certificates</h2>
+        <p>Currently studying at <strong>ITI</strong> and preparing for <strong>ISTQB</strong> certification.</p>
+      </section>
+
+      <section id="contact" class="section contact">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="contact-cards">
+          <a class="contact-card" href="mailto:heshamhenry2@gmail.com">Email</a>
+          <a class="contact-card" href="https://github.com/HeshamHenry1" target="_blank" rel="noopener">GitHub</a>
+          <a class="contact-card" href="https://www.linkedin.com/in/hesham-henry-413621204" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <button id="chatToggle" class="chat-toggle" aria-label="Open AI Assistant">🤖</button>
+
+    <div id="chatWidget" class="chat-widget" aria-hidden="true">
+      <header class="chat-header">
+        <strong>AI Assistant</strong>
+        <button id="chatClose" class="chat-close" aria-label="Close">✕</button>
+      </header>
+      <div id="chatMessages" class="chat-messages" role="log" aria-live="polite"></div>
+      <form id="chatForm" class="chat-form">
+        <input id="chatInput" type="text" placeholder="Ask about my projects and skills..." aria-label="Message" />
+        <button class="btn primary" type="submit">Send</button>
+      </form>
+      <details class="chat-advanced">
+        <summary>Advanced</summary>
+        <label class="field">
+          <span>OpenAI API Key (optional — not secure in browser)</span>
+          <input id="openaiKey" type="password" placeholder="sk-..." />
+        </label>
+        <small>For local demos only. Prefer using a secure server proxy.</small>
+      </details>
+    </div>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Hesham Henry — QA Engineer</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+    <script id="projects-data" type="application/json">[
+  {
+    "title": "AutomationExercise — Playwright (POM)",
+    "description": "Functional and UI tests with Playwright using Page Object Model.",
+    "tags": ["Playwright", "POM", "UI", "E2E"],
+    "url": "https://github.com/HeshamHenry1",
+    "category": "Playwright",
+    "icon": "🚀"
+  },
+  {
+    "title": "ParaBank — Playwright (POM)",
+    "description": "Login, transfers, and payments with reusable test components.",
+    "tags": ["Playwright", "Banking", "Smoke", "Regression"],
+    "url": "https://github.com/HeshamHenry1",
+    "category": "Playwright",
+    "icon": "🚀"
+  },
+  {
+    "title": "SauceDemo — UI Validation",
+    "description": "UI elements validation and checkout flow.",
+    "tags": ["UI", "Assertions", "Visual"],
+    "url": "https://github.com/HeshamHenry1",
+    "category": "Playwright",
+    "icon": "🚀"
+  },
+  {
+    "title": "The Internet Herokuapp — Cross-page checks",
+    "description": "Cross-page scenarios and edge cases.",
+    "tags": ["Playwright", "Cross-page"],
+    "url": "https://github.com/HeshamHenry1",
+    "category": "Playwright",
+    "icon": "🚀"
+  },
+  {
+    "title": "AutomationExercise — WebDriverIO",
+    "description": "Auth, cart, and checkout flows with WebDriverIO.",
+    "tags": ["WebDriverIO", "E2E"],
+    "url": "https://github.com/HeshamHenry1",
+    "category": "WebDriverIO",
+    "icon": "⚙️"
+  },
+  {
+    "title": "Guru99 Banking — WebDriverIO",
+    "description": "Coverage of core banking flows with clear assertions.",
+    "tags": ["WebDriverIO", "Banking"],
+    "url": "https://github.com/HeshamHenry1",
+    "category": "WebDriverIO",
+    "icon": "⚙️"
+  },
+  {
+    "title": "The Internet — Form validation",
+    "description": "Form validation and error state tests.",
+    "tags": ["WebDriverIO", "Validation"],
+    "url": "https://github.com/HeshamHenry1",
+    "category": "WebDriverIO",
+    "icon": "⚙️"
+  },
+  {
+    "title": "Automation Exercise — Cypress",
+    "description": "Tests with mochawesome reports and screenshots.",
+    "tags": ["Cypress", "mochawesome", "Reports"],
+    "url": "https://github.com/HeshamHenry1",
+    "category": "Cypress",
+    "icon": "🌐"
+  },
+  {
+    "title": "AutomationExercise — Selenium (POM)",
+    "description": "Page Object Model structure with Selenium.",
+    "tags": ["Selenium", "POM"],
+    "url": "https://github.com/HeshamHenry1",
+    "category": "Selenium",
+    "icon": "🧪"
+  },
+  {
+    "title": "SauceDemo — Selenium",
+    "description": "Core functionality checks and purchase flow.",
+    "tags": ["Selenium", "UI"],
+    "url": "https://github.com/HeshamHenry1",
+    "category": "Selenium",
+    "icon": "🧪"
+  },
+  {
+    "title": "nopCommerce — TestRail",
+    "description": "Full test plan, test cases, and defect tracking.",
+    "tags": ["Manual", "TestRail"],
+    "url": "https://github.com/HeshamHenry1",
+    "category": "Manual",
+    "icon": "✍️"
+  },
+  {
+    "title": "Mercury Tours — TestRail",
+    "description": "Functional tests based on user flows.",
+    "tags": ["Manual", "TestRail"],
+    "url": "https://github.com/HeshamHenry1",
+    "category": "Manual",
+    "icon": "✍️"
+  },
+  {
+    "title": "ParaBank — Excel",
+    "description": "Manual test cases based on user stories.",
+    "tags": ["Manual", "Excel"],
+    "url": "https://github.com/HeshamHenry1",
+    "category": "Manual",
+    "icon": "✍️"
+  },
+  {
+    "title": "SauceDemo — Excel",
+    "description": "UI and functional manual tests.",
+    "tags": ["Manual", "Excel"],
+    "url": "https://github.com/HeshamHenry1",
+    "category": "Manual",
+    "icon": "✍️"
+  }
+]</script>
+    <script src="app.js"></script>
+  </body>
+  </html>
+
+
