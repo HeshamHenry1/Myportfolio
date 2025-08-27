@@ -47,6 +47,26 @@ if (window.gsap) {
   });
 }
 
+// Typewriter utility
+function typewriter(node, text, speed = 28) {
+  let i = 0;
+  function tick() {
+    node.textContent = text.slice(0, i++);
+    if (i <= text.length) requestAnimationFrame(() => setTimeout(tick, speed));
+  }
+  tick();
+}
+
+// About typing
+const aboutText = "I'm Hesham Henry, a Software QA & Automation Test Engineer. I design reliable, maintainable test suites using Playwright, WebDriverIO, Cypress, and Selenium. I blend strong manual testing with automation best practices (POM, reusable utilities, stable selectors, CI readiness) to help teams ship with confidence.";
+const aboutNode = document.getElementById('aboutTyped');
+if (aboutNode) typewriter(aboutNode, aboutText);
+
+// Job title typing (hero)
+const jobNode = document.getElementById('jobTitleTyped');
+const jobText = 'Software QA & Automation Test Engineer';
+if (jobNode) typewriter(jobNode, jobText, 60);
+
 // Load projects
 async function loadProjects() {
   try {
@@ -105,6 +125,11 @@ function renderProjects(projects) {
       row.appendChild(card);
     });
     grid.appendChild(row);
+
+    // collapsed by default; expand on hover or click
+    header.addEventListener('mouseenter', () => header.classList.add('open'));
+    // Keep open after hover until clicked again
+    header.addEventListener('click', () => header.classList.toggle('open'));
   });
 
   // Add tilt hover effect
@@ -123,7 +148,55 @@ function renderProjects(projects) {
   });
 }
 
+// Load certificates feature grid
+async function loadCertificates() {
+  const grid = $('#certsGrid');
+  if (!grid) return;
+  try {
+    let certs;
+    try {
+      const res = await fetch('data/certificates.json');
+      if (res.ok) certs = await res.json();
+    } catch (e) {}
+    certs ||= [
+      { title: 'ISTQB Foundation', desc: 'Preparing and practicing test design techniques.', emoji: '🎓' },
+      { title: 'Test Automation', desc: 'Playwright, WebDriverIO, Cypress, Selenium.', emoji: '🤖' },
+      { title: 'Database & SQL', desc: 'Write and validate queries, join, transactions.', emoji: '🗄️' },
+    ];
+    grid.innerHTML = '';
+    certs.forEach((c) => {
+      const item = document.createElement('article');
+      item.className = 'feature';
+      item.innerHTML = `
+        <span class="emoji">${c.emoji || '📜'}</span>
+        <div>
+          <h3 class="title">${c.title}</h3>
+          <p class="desc">${c.desc || ''}</p>
+        </div>
+      `;
+      grid.appendChild(item);
+    });
+  } catch (e) {
+    console.warn('Failed to load certificates', e);
+  }
+}
+
 loadProjects();
+loadCertificates();
+
+// Mini contact form -> compose email via mailto
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = (document.getElementById('cfName')?.value || '').trim();
+    const email = (document.getElementById('cfEmail')?.value || '').trim();
+    const message = (document.getElementById('cfMessage')?.value || '').trim();
+    const subject = encodeURIComponent(`Portfolio message from ${name || 'Someone'}`);
+    const body = encodeURIComponent(`From: ${name}\nEmail: ${email}\n\n${message}`);
+    window.location.href = `mailto:heshamhenry2@gmail.com?subject=${subject}&body=${body}`;
+  });
+}
 
 // AI Chat Assistant
 const chatState = {
@@ -222,11 +295,7 @@ chatForm?.addEventListener('submit', async (e) => {
 
 // Proactive introduction on load
 window.addEventListener('load', async () => {
-  // Open chat automatically and introduce projects
-  toggleChat(true);
-  addBubble('Hi! I\'m your AI assistant. Here\'s a quick intro to my projects and tools.');
-  const intro = await localAnswer('projects');
-  addBubble(intro);
+  // No auto-open; keep chat closed by default
 });
 
 

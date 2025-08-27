@@ -32,7 +32,7 @@
       <section id="hero" class="section hero">
         <div class="hero-content">
           <img class="avatar" src="assets/avatar.jpg" alt="Portrait of Hesham Henry" />
-          <h1 class="headline gradient-text">Software QA & Automation Test Engineer — Hesham Henry</h1>
+          <h1 class="headline gradient-text"><span id="jobTitleTyped" class="typed"></span> — Hesham Henry</h1>
           <p class="subtitle">Manual & Automation Testing • Playwright • WebDriverIO • Cypress • Selenium</p>
           <div class="cta-group">
             <a class="btn primary" href="#projects">Explore Projects</a>
@@ -48,17 +48,7 @@
 
       <section id="about" class="section about">
         <h2 class="section-title">About</h2>
-        <p>
-          I'm <strong>Hesham Henry</strong>, a <strong>Software QA & Automation Test Engineer</strong> with hands-on experience designing
-          scalable testing strategies across web applications. I create maintainable test suites using <strong>Playwright</strong>,
-          <strong>WebDriverIO</strong>, <strong>Cypress</strong>, and <strong>Selenium</strong>, and I document outcomes with clear, actionable
-          reports (mochawesome/HTML).
-        </p>
-        <p>
-          My approach blends strong <strong>manual testing</strong> fundamentals (exploratory testing, user-flow validation, risk-based
-          prioritization) with <strong>automation</strong> best practices (POM, DRY utilities, stable selectors, CI readiness). I care
-          about user experience, reliability, and speed-to-feedback in teams.
-        </p>
+        <p id="aboutTyped" class="typed"></p>
       </section>
 
       <section id="skills" class="section skills">
@@ -84,7 +74,7 @@
 
       <section id="certs" class="section certs">
         <h2 class="section-title">Certificates</h2>
-        <p>Currently studying at <strong>ITI</strong> and preparing for <strong>ISTQB</strong> certification.</p>
+        <div id="certsGrid" class="feature-grid"></div>
       </section>
 
       <section id="contact" class="section contact">
@@ -94,6 +84,14 @@
           <a class="contact-card" href="https://github.com/HeshamHenry1" target="_blank" rel="noopener">GitHub</a>
           <a class="contact-card" href="https://www.linkedin.com/in/hesham-henry-413621204" target="_blank" rel="noopener">LinkedIn</a>
         </div>
+        <form id="contactForm" class="mini-form">
+          <div class="row">
+            <input id="cfName" type="text" placeholder="Your name" required />
+            <input id="cfEmail" type="email" placeholder="Your email" required />
+          </div>
+          <textarea id="cfMessage" rows="4" placeholder="Your message..." required></textarea>
+          <button class="btn primary" type="submit">Send Message</button>
+        </form>
       </section>
     </main>
 
