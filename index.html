@@ -1,245 +1,717 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hesham Henry | QA Engineer Portfolio</title>
-    <meta name="description" content="Portfolio of Hesham Henry — Software Testing Engineer (Manual & Automation)" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'><text y='50%' x='50%' dominant-baseline='middle' text-anchor='middle' font-size='160'>🧪</text></svg>">
-  </head>
-  <body>
-    <div id="tsparticles"></div>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesham Henry - QA Engineer Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Hesham<span class="accent">.</span></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About M</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certificates" class="nav-link">Certificates</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="social-links">
+                <a href="https://github.com/HeshamHenry1" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/hesham-henry-413621204" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-    <header class="site-header">
-      <nav class="nav">
-        <a class="brand" href="#hero">Hesham Henry</a>
-        <button id="navToggle" class="nav-toggle" aria-label="Menu">☰</button>
-        <ul id="navMenu" class="nav-menu">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#certs">Certificates</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section id="hero" class="section hero">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+        </div>
         <div class="hero-content">
-          <img class="avatar" src="assets/avatar.jpg" alt="Portrait of Hesham Henry" />
-          <h1 class="headline gradient-text"><span id="jobTitleTyped" class="typed"></span> — Hesham Henry</h1>
-          <p class="subtitle">Manual & Automation Testing • Playwright • WebDriverIO • Cypress • Selenium</p>
-          <div class="cta-group">
-            <a class="btn primary" href="#projects">Explore Projects</a>
-            <a class="btn ghost" href="https://github.com/HeshamHenry1" target="_blank" rel="noopener">GitHub</a>
-          </div>
+            <div class="hero-avatar">
+                <div class="avatar-circle">
+                    <span class="avatar-letter">H</span>
+                </div>
+                <div class="avatar-glow"></div>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">HI , IM </span>
+                <span class="title-name"> Hesham Henry</span>
+            </h1>
+            <p class="hero-subtitle">
+               Software QA & Automation Test Engineer
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-code"></i>
+                    <span>View Projects</span>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i>
+                    <span> Contact Me </span>
+                </a>
+            </div>
         </div>
-        <div class="hero-illustration" aria-hidden="true">
-          <div class="orb orb-1"></div>
-          <div class="orb orb-2"></div>
-          <div class="orb orb-3"></div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section id="about" class="section about">
-        <h2 class="section-title">About</h2>
-        <p id="aboutTyped" class="typed"></p>
-      </section>
-
-      <section id="skills" class="section skills">
-        <h2 class="section-title">Skills & Tools</h2>
-        <ul class="chip-list">
-          <li class="chip">TestRail</li>
-          <li class="chip">Excel</li>
-          <li class="chip">Playwright</li>
-          <li class="chip">WebDriverIO</li>
-          <li class="chip">Cypress</li>
-          <li class="chip">Selenium</li>
-          <li class="chip">Git</li>
-          <li class="chip">GitHub</li>
-          <li class="chip">mochawesome</li>
-          <li class="chip">HTML Reports</li>
-        </ul>
-      </section>
-
-      <section id="projects" class="section projects">
-        <h2 class="section-title">Projects</h2>
-        <div id="projectsGrid" class="grid"></div>
-      </section>
-
-      <section id="certs" class="section certs">
-        <h2 class="section-title">Certificates</h2>
-        <div id="certsGrid" class="feature-grid"></div>
-      </section>
-
-      <section id="contact" class="section contact">
-        <h2 class="section-title">Get in Touch</h2>
-        <div class="contact-cards">
-          <a class="contact-card" href="mailto:heshamhenry2@gmail.com">Email</a>
-          <a class="contact-card" href="https://github.com/HeshamHenry1" target="_blank" rel="noopener">GitHub</a>
-          <a class="contact-card" href="https://www.linkedin.com/in/hesham-henry-413621204" target="_blank" rel="noopener">LinkedIn</a>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me </h2>
+                <p class="section-subtitle">Lets See My Journey As QA</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="about-title"> My Journy In Quality Assurance   </h3>
+                    <p class="about-description">
+                       I am a passionate software test engineer with experience in both manual and automated testing 
+                        My journey in the quality assurance field has equipped me with a keen eye for detail and a methodical approach to 
+                        ensuring software quality across various domains.
+                    </p>
+                    <p class="about-description">
+                        I am based in Cairo, Egypt, specializing in creating comprehensive testing strategies, from detailed manual 
+                        test cases to robust automation frameworks using industry-standard tools.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span> Cairo Egypt</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Software Tester & QA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-cards">
+                    <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-icon">
+                            <i class="fas fa-vial"></i>
+                        </div>
+                        <h4 class="card-title">Manual Testing </h4>
+                        <p class="card-description">Writng Test Cases And Bug Report With Excel And TestRail </p>
+                    </div>
+                    <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h4 class="card-title">Automation Testing </h4>
+                        <p class="card-description">Playwright, Cypress, Selenium & WebDriverIO</p>
+                    </div>
+                    <div class="about-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <h4 class="card-title">Bug Reportibg </h4>
+                        <p class="card-description">Clear and Effictive Bug Report </p>
+                    </div>
+                    <div class="about-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h4 class="card-title">Quality Assurance</h4>
+                        <p class="card-description">Reduce Risk and Bugs   </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <form id="contactForm" class="mini-form">
-          <div class="row">
-            <input id="cfName" type="text" placeholder="Your name" required />
-            <input id="cfEmail" type="email" placeholder="Your email" required />
-          </div>
-          <textarea id="cfMessage" rows="4" placeholder="Your message..." required></textarea>
-          <button class="btn primary" type="submit">Send Message</button>
-        </form>
-      </section>
-    </main>
+    </section>
 
-    <button id="chatToggle" class="chat-toggle" aria-label="Open AI Assistant">🤖</button>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills </h2>
+                <p class="section-subtitle"> Effictive Tools </p>
+            </div>
+            <div class="skills-content">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-vial"></i>
+                          </div>
+                            <h3 class="category-title">Manual Testing</h3>
+                            <p class="category-description">Extensive experience in Manual Testing</p>
+                                        </div>
 
-    <div id="chatWidget" class="chat-widget" aria-hidden="true">
-      <header class="chat-header">
-        <strong>AI Assistant</strong>
-        <button id="chatClose" class="chat-close" aria-label="Close">✕</button>
-      </header>
-      <div id="chatMessages" class="chat-messages" role="log" aria-live="polite"></div>
-      <form id="chatForm" class="chat-form">
-        <input id="chatInput" type="text" placeholder="Ask about my projects and skills..." aria-label="Message" />
-        <button class="btn primary" type="submit">Send</button>
-      </form>
-      <details class="chat-advanced">
-        <summary>Advanced</summary>
-        <label class="field">
-          <span>OpenAI API Key (optional — not secure in browser)</span>
-          <input id="openaiKey" type="password" placeholder="sk-..." />
-        </label>
-        <small>For local demos only. Prefer using a secure server proxy.</small>
-      </details>
-    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">TestRail</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Excel Testing</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Test Case Design</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Bug Reporting</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <footer class="site-footer">
-      <p>© <span id="year"></span> Hesham Henry — QA Engineer</p>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="category-title">Automation Testing </h3>
+                        <p class="category-description">Automation Frameworks and Tools</p>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Selenium</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Playwright</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Cypress</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">WebDriverIO</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="category-title">Tools and Teqniques  </h3>
+                        <p class="category-description"> Tools for Development and Testing</p>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git/GitHub</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">VS Code</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Postman</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML/CSS</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Presentation of My Recent Work and Personal Projects</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="images/Happet_Pet_Store.png" alt="Happet Pet Store Testing Suite">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HeshamHenry1/Testing-Projects/tree/master/Manual/Happet_pet_store" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/HeshamHenry1" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Manual Testing </div>
+                        <h3 class="project-title">Happet Pet Store Testing Suite</h3>
+                        <p class="project-description">
+                           Comprehensive Testing Project with a Full Test Plan, Test Cases, and Detailed Bug Reports using TestRail.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">TestRail</span>
+                            <span class="tech-tag">Manual Testing</span>
+                            <span class="tech-tag">Bug Reporting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="images/AutomationExercise.png" alt="AutomationExercise - Playwright POM">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HeshamHenry1/Testing-Projects/tree/master/Automation/Playwright/AutomationExercise-PlayWright-POM" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/HeshamHenry1" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Automation Testing </div>
+                        <h3 class="project-title">AutomationExercise - Playwright POM</h3>
+                        <p class="project-description">
+                            End-to-End Testing using Playwright with the Page Object Model (POM) Design Pattern.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Playwright</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">POM</span>
+                            <span class="tech-tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="images/MercuryTours.png" alt="Mercury Tours Functional Testing">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HeshamHenry1/Testing-Projects/tree/master/Manual/MercuryTours" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/HeshamHenry1" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Functional Testing </div>
+                        <h3 class="project-title">Mercury Tours Functional Testing</h3>
+                        <p class="project-description">
+                            Functional Testing based on User Flows and Scenarios using TestRail for Test Management.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">TestRail</span>
+                            <span class="tech-tag">Functional Testing</span>
+                            <span class="tech-tag">User Flows</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="images/The-Internet-Herokap.png" alt="The-Internet-Herokap - WebDriverIO">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HeshamHenry1/Testing-Projects/tree/master/Automation/WebDriverio/the-internet-wdio" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/HeshamHenry1" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category"> Automation Testing </div>
+                        <h3 class="project-title">The-Internet-Herokap - WebDriverIO</h3>
+                        <p class="project-description">
+                           Hands-on Training Program on Testing through a Banking Application Automation Project with Comprehensive Test Coverage using WebDriverIO.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">WebDriverIO</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Banking Domain</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image">
+                        <img src="images/SauceDemo.png" alt="SauceDemo Selenium">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HeshamHenry1/Testing-Projects/tree/master/Automation/selenium/SauceDemo_swagslab" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/HeshamHenry1" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category"> Selenium Automation </div>
+                        <h3 class="project-title">SauceDemo Functional & UI </h3>
+                        <p class="project-description">
+                          UI and Functional Testing across Multiple Frameworks including Playwright and Selenium.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Playwright</span>
+                            <span class="tech-tag">Selenium</span>
+                            <span class="tech-tag">UI Testing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image">
+                        <img src="images/CypressE2E.png" alt="Cypress E2E Testing">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HeshamHenry1/Testing-Projects/tree/master/Automation/cypress" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/HeshamHenry1" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Cypress Automation </div>
+                        <h3 class="project-title">Cypress E2E Testing</h3>
+                        <p class="project-description">
+                            Automation Exercise Testing with Detailed Reports and Screenshots using the Cypress Framework.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Cypress</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">E2E Testing</span>
+                            <span class="tech-tag">Reports</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-cta">
+                <a href="https://github.com/HeshamHenry1" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-github"></i>
+                    <span> View All Projects on GitHub </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certifications & Achievements</h2>
+               <p class="section-subtitle">Professional Certifications and Training Courses</p>
+
+            </div>
+            <div class="certificates-grid">
+                <div class="certificate-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3 class="certificate-title">ISTQB Foundation Level</h3>
+                        <p class="certificate-issuer">International Software Testing Qualifications Board</p>
+                        <p class="certificate-date">2024</p>
+                        <div class="certificate-skills">
+                            <span class="skill-badge">Software Testing</span>
+                            <span class="skill-badge">Test Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="certificate-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3 class="certificate-title">Automation Testing </h3>
+                        <p class="certificate-issuer">Udemy</p>
+                        <p class="certificate-date">2024</p>
+                        <div class="certificate-skills">
+                            <span class="skill-badge">Selenium</span>
+                            <span class="skill-badge">Palaywright</span>
+                            <span class="skill-badge">Cypress</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="certificate-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3 class="certificate-title">Programing </h3>
+                        <p class="certificate-issuer">Mahara Tech</p>
+                        <p class="certificate-date">2025</p>
+                        <div class="certificate-skills">
+                            <span class="skill-badge">C & c++</span>
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">Java </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="certificate-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3 class="certificate-title">DataBase </h3>
+                        <p class="certificate-issuer">ITI - Mahara Tech </p>
+                        <p class="certificate-date">2025</p>
+                        <div class="certificate-skills">
+                            <span class="skill-badge">Fundementales </span>
+                            <span class="skill-badge">SQL </span>
+                            <span class="skill-badge">Advanced SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="certificate-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3 class="certificate-title">API Testing with Postman</h3>
+                        <p class="certificate-issuer">Udemy</p>
+                        <p class="certificate-date">2025</p>
+                        <div class="certificate-skills">
+                            <span class="skill-badge">API Testing</span>
+                            <span class="skill-badge">Postman</span>
+                            <span class="skill-badge">REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="certificate-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3 class="certificate-title">Agile Testing Fundamentals</h3>
+                        <p class="certificate-issuer">Udemy</p>
+                        <p class="certificate-date">2025</p>
+                        <div class="certificate-skills">
+                            <span class="skill-badge">Agile</span>
+                            <span class="skill-badge">Scrum</span>
+                            <span class="skill-badge">Test Strategy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+               <h2 class="section-title">Contact Me</h2>
+               <p class="section-subtitle">Let's Talk About Your Next Project</p>
+
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-text">
+                      <h3 class="contact-title">Let's Connect</h3>
+                        <p class="contact-description">
+                              I’m always open to discussing new opportunities, exciting projects, 
+                             or just having a friendly chat about Quality Assurance and Testing.
+                                </p>
+                    </div>
+                    <div class="contact-cards">
+                        <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4 class="contact-method"> Email </h4>
+                                <p class="contact-value">heshamhenry2@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4 class="contact-method">Location</h4>
+                                <p class="contact-value">Cairo , Egypt </p>
+                            </div>
+                        </div>
+                        <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="contact-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="contact-details">
+                            <h4 class="contact-method">Contact Methods</h4>
+
+                                <div class="social-links-contact">
+                                    <a href="https://github.com/HeshamHenry1" target="_blank" class="social-link-contact">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://linkedin.com/in/hesham-henry-413621204" target="_blank" class="social-link-contact">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email </label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message </label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            <span> Send Message </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+               <div class="footer-text">
+                     <p>&copy; 2025 Hesham Henry. All Rights Reserved.</p>
+                     <p>Built with HTML, CSS & JavaScript</p>
+                        </div>
+                <div class="footer-social">
+                    <a href="https://github.com/HeshamHenry1" target="_blank" class="footer-social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/hesham-henry-413621204" target="_blank" class="footer-social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
-    <script id="projects-data" type="application/json">[
-  {
-    "title": "AutomationExercise — Playwright (POM)",
-    "description": "Functional and UI tests with Playwright using Page Object Model.",
-    "tags": ["Playwright", "POM", "UI", "E2E"],
-    "url": "https://github.com/HeshamHenry1",
-    "category": "Playwright",
-    "icon": "🚀"
-  },
-  {
-    "title": "ParaBank — Playwright (POM)",
-    "description": "Login, transfers, and payments with reusable test components.",
-    "tags": ["Playwright", "Banking", "Smoke", "Regression"],
-    "url": "https://github.com/HeshamHenry1",
-    "category": "Playwright",
-    "icon": "🚀"
-  },
-  {
-    "title": "SauceDemo — UI Validation",
-    "description": "UI elements validation and checkout flow.",
-    "tags": ["UI", "Assertions", "Visual"],
-    "url": "https://github.com/HeshamHenry1",
-    "category": "Playwright",
-    "icon": "🚀"
-  },
-  {
-    "title": "The Internet Herokuapp — Cross-page checks",
-    "description": "Cross-page scenarios and edge cases.",
-    "tags": ["Playwright", "Cross-page"],
-    "url": "https://github.com/HeshamHenry1",
-    "category": "Playwright",
-    "icon": "🚀"
-  },
-  {
-    "title": "AutomationExercise — WebDriverIO",
-    "description": "Auth, cart, and checkout flows with WebDriverIO.",
-    "tags": ["WebDriverIO", "E2E"],
-    "url": "https://github.com/HeshamHenry1",
-    "category": "WebDriverIO",
-    "icon": "⚙️"
-  },
-  {
-    "title": "Guru99 Banking — WebDriverIO",
-    "description": "Coverage of core banking flows with clear assertions.",
-    "tags": ["WebDriverIO", "Banking"],
-    "url": "https://github.com/HeshamHenry1",
-    "category": "WebDriverIO",
-    "icon": "⚙️"
-  },
-  {
-    "title": "The Internet — Form validation",
-    "description": "Form validation and error state tests.",
-    "tags": ["WebDriverIO", "Validation"],
-    "url": "https://github.com/HeshamHenry1",
-    "category": "WebDriverIO",
-    "icon": "⚙️"
-  },
-  {
-    "title": "Automation Exercise — Cypress",
-    "description": "Tests with mochawesome reports and screenshots.",
-    "tags": ["Cypress", "mochawesome", "Reports"],
-    "url": "https://github.com/HeshamHenry1",
-    "category": "Cypress",
-    "icon": "🌐"
-  },
-  {
-    "title": "AutomationExercise — Selenium (POM)",
-    "description": "Page Object Model structure with Selenium.",
-    "tags": ["Selenium", "POM"],
-    "url": "https://github.com/HeshamHenry1",
-    "category": "Selenium",
-    "icon": "🧪"
-  },
-  {
-    "title": "SauceDemo — Selenium",
-    "description": "Core functionality checks and purchase flow.",
-    "tags": ["Selenium", "UI"],
-    "url": "https://github.com/HeshamHenry1",
-    "category": "Selenium",
-    "icon": "🧪"
-  },
-  {
-    "title": "nopCommerce — TestRail",
-    "description": "Full test plan, test cases, and defect tracking.",
-    "tags": ["Manual", "TestRail"],
-    "url": "https://github.com/HeshamHenry1",
-    "category": "Manual",
-    "icon": "✍️"
-  },
-  {
-    "title": "Mercury Tours — TestRail",
-    "description": "Functional tests based on user flows.",
-    "tags": ["Manual", "TestRail"],
-    "url": "https://github.com/HeshamHenry1",
-    "category": "Manual",
-    "icon": "✍️"
-  },
-  {
-    "title": "ParaBank — Excel",
-    "description": "Manual test cases based on user stories.",
-    "tags": ["Manual", "Excel"],
-    "url": "https://github.com/HeshamHenry1",
-    "category": "Manual",
-    "icon": "✍️"
-  },
-  {
-    "title": "SauceDemo — Excel",
-    "description": "UI and functional manual tests.",
-    "tags": ["Manual", "Excel"],
-    "url": "https://github.com/HeshamHenry1",
-    "category": "Manual",
-    "icon": "✍️"
-  }
-]</script>
-    <script src="app.js"></script>
-  </body>
-  </html>
-
+    <script src="main.js"></script>
+</body>
+</html>
 

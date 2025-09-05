@@ -1,7 +1,0 @@
-[
-  { "title": "ISTQB Foundation (in progress)", "desc": "Studying and practicing test design techniques.", "emoji": "🎓" },
-  { "title": "Test Automation", "desc": "Playwright, WebDriverIO, Cypress, Selenium.", "emoji": "🤖" },
-  { "title": "Database & SQL", "desc": "Queries, joins, indexing basics.", "emoji": "🗄️" }
-]
-
-
